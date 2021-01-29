@@ -1,0 +1,47 @@
+{
+  "name": "frontend-gulp",
+  "version": "1.0.0",
+  "description": "Kick start a build workflow for your frontend development with Gulp",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build --prod"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:SumanOfficial/FrontendGulp.git"
+  },
+  "keywords": [
+    "gulp",
+    "setup",
+    "gulp",
+    "4"
+  ],
+  "author": "Suman Biswas",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/register": "^7.12.10",
+    "autoprefixer": "^9.7.5",
+    "babel-loader": "^8.2.2",
+    "browser-sync": "^2.26.13",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-if": "^3.0.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-postcss": "^9.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-zip": "^5.0.2",
+    "vinyl-named": "^1.1.0",
+    "webpack-stream": "^6.1.1",
+    "yargs": "^16.2.0"
+  },
+  "dependencies": {},
+  "bugs": {
+    "url": "https://github.com/SumanOfficial/FrontendGulp/issues"
+  },
+  "homepage": "https://github.com/SumanOfficial/FrontendGulp#readme"
+}
