@@ -18,10 +18,8 @@ export const prod_css_dir = "./templates/css";
 
 // Javascript
 export const dev_js_dir = "./templates/js";
-// export const dev_js_file = ["./templates/js/*.js", "!./templates/js/*.min.js"];
 export const dev_js_file = ["./templates/js/*.js", "!./templates/js/*.min.js"];
 export const prod_js_dir = "./templates/js";
-// export const prod_js_dir = "./build/js";
 // ------------------------------------------
 
 // Images

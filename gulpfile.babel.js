@@ -31,19 +31,10 @@ export const styles = () => {
 };
 
 /**
- * minified image
- */
-export const images = () => {
-  return src(variable.dev_img_dir + "/**/*." + variable.img_types)
-    .pipe(gulpif(PRODUCTION, imagemin()))
-    .pipe(gulpif(PRODUCTION, dest(variable.prod_img_dir)));
-};
-
-/**
  * js files
  */
 export const scripts = () => {
-  return src(["./templates/js/*.js", "!./templates/js/*.min.js"])
+  return src(variable.dev_js_file)
     .pipe(
       webpack({
         module: {
@@ -73,6 +64,15 @@ export const scripts = () => {
       })
     )
     .pipe(dest(variable.prod_js_dir));
+};
+
+/**
+ * minified image
+ */
+export const images = () => {
+  return src(variable.dev_img_dir + "/**/*." + variable.img_types)
+    .pipe(gulpif(PRODUCTION, imagemin()))
+    .pipe(gulpif(PRODUCTION, dest(variable.prod_img_dir)));
 };
 
 /**
